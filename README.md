@@ -1,6 +1,6 @@
 # Francis Pugnère
 
-    Développeur web fullstack
+## Développeur web fullstack
 
 
 **Freelance depuis 2012**
@@ -11,3 +11,4 @@ Maintenant je propose mes services de développement d'interface web aux entrepr
 
 J'utilise les nouvelles technologies à ma disposition afin de faire des applications toujours plus performantes et ergonomiques. J'adapte des templates pour le design et je peux m'interfacer avec un Web Designer au besoin.
 
+http://www.francis.pugnere.fr
