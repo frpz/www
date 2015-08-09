@@ -107,7 +107,7 @@
 						desc: "Ensemble d'outils permettants d'administrer un réseau Voix",
 						list: [
 							"Configuration ENUM pour Class 4",
-							"Importation et analyse de configuration de l'Acme Packet",
+							"Import et analyse de configuration de l'Acme Packet",
 							"Gestion des bases de données de routage"
 						]
 					}
