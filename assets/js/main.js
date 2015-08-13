@@ -65,14 +65,14 @@
 		"/" : display("page-home", {
 			titre: "Freelance depuis 2012",
 			maindesc: [
-				"Fort d'une expérience de 12 ans dans les télécoms et réseaux, j'ai choisit de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise ou j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes.",
+				"Fort d'une expérience de 12 ans dans les télécoms et réseaux, j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes.",
 				"Maintenant je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes.",
 				"J'utilise les nouvelles technologies à ma disposition afin de faire des applications toujours plus performantes et ergonomiques. J'adapte des templates pour le design et je peux m'interfacer avec un Web Designer au besoin."
 			],
 			demo: {
 				titre: "Quelques exemples de mes réalisations",
 				desc: "Il s'agit ici d'un petit aperçu, pour plus d'informations, veuillez me contacter.",
-				foot: "La plupart de ces applications ont un backend en PHP et un frontend en HTML/Javascript. Je suis ouvert à toutes les nouveautés et je test régulièrement de nouvelles technologies, afin de toujours apporter la meilleur expérience utilisateur à mes clients.",
+				foot: "La plupart de ces applications ont un backend en PHP et un frontend en HTML/Javascript. Je suis ouvert à toutes les nouveautés et je teste régulièrement de nouvelles technologies, afin de toujours apporter la meilleur expérience utilisateur à mes clients.",
 				articles: [
 					{ titre: "FireFlux", image: "fireflux", width: "12u",
 						desc: "Application de gestion de flux de firewalls. ",
@@ -81,7 +81,7 @@
 							"Import dans la base de données des fichiers de configurationd des firewalls",
 							"Génération automatique des configuration, et envoi sur les équipements",
 							"Gestion des droits utilisateurs (Active Directory)",
-							"Gestion de templates de création de flux",
+							"Utilisation de templates de création de flux",
 							"Regroupement des flux par Projets"
 						] },
 					{ titre: "KalliGraph", image: "kalligraph", width: "12u",
@@ -89,13 +89,13 @@
 						list: [
 							"Affichage de différents types de graphiques (Linear, Polar...) depuis la base de données",
 							"Export des graphs sous différents formats",
-							"gestion multi-utilisateurs et par groupes"
+							"Multi-utilisateurs et multi-groupes"
 						]
 					},
 					{ titre: "ORO: Gestion de temps", image: "oro", width: "12u",
-						desc: "Gestion de temps pour des équipes travaillant sur différents projets",
+						desc: "Application de Time Managment pour des équipes travaillant sur différents projets",
 						list: [
-							"Gestion multi-utilisateurs",
+							"Multi-utilisateurs",
 							"Génération de rapports d'activité",
 							"Edition des projets"
 						]
@@ -108,7 +108,7 @@
 						list: [
 							"Configuration ENUM pour Class 4",
 							"Import et analyse de configuration de l'Acme Packet",
-							"Gestion des bases de données de routage"
+							"Configuration des bases de données de routage"
 						]
 					}
 				]
