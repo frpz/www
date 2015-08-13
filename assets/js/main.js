@@ -78,7 +78,7 @@
 						desc: "Application de gestion de flux de firewalls. ",
 						list: [
 							"Affichage des flux entre les différents firewalls",
-							"Import dans la base de données des fichiers de configurationd des firewalls",
+							"Import dans la base de données des fichiers de configuration des firewalls",
 							"Génération automatique des configuration, et envoi sur les équipements",
 							"Gestion des droits utilisateurs (Active Directory)",
 							"Utilisation de templates de création de flux",
@@ -113,9 +113,7 @@
 					}
 				]
 			}
-		}),
-		"/demo": display("page-demo"),
-		"/photos" : display("page-photos",{"images": [ "image01.jpg", "image02.jpg", "image03.jpg", "image04.jpg", "image05.jpg", "image06.jpg", "image07.jpg", "image08.jpg", "image09.jpg", "image10.jpg", "image11.jpg", "image12.jpg", "image13.jpg", "image14.jpg", "image15.jpg" ]})
+		})
 	});
 	router.start("/");
 
