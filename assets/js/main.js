@@ -182,7 +182,7 @@ var LG_en = {
 	});
 	
 	Handlebars.registerHelper('isLang', function(lg, titre, alt) {
-		console.log("helper isLang: ",arguments, this);
+		//console.log("helper isLang: ",arguments, this);
 		return new Handlebars.SafeString('<span class="lglink" title="'+alt+'">' + ( this.language == lg ? titre : '<a href="#/'+lg+'">'+titre+"</a>") + '</span>');
 	});
 	
@@ -205,6 +205,9 @@ var LG_en = {
 
 			//compilation du template principal
 			var t= Handlebars.compile($("#"+template).html());
+
+			//google analytics
+			ga('send', 'pageview', { 'page': window.location.hash.substring(1)  });
 
 			//On fade le contenu actuel puis on remet le nouveau
 			$("#main").fadeOut(200,function(){
