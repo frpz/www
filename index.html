@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<META NAME="Author" CONTENT="Francis Pugnere">
 		<META http-equiv="Content-Language" content="fr">
-		<META NAME="Keywords" CONTENT="francis, pugnere, francis pugnere, développeur, web, développeur web, freelance, devops, php, javascript, developpement">
+		<META NAME="Keywords" CONTENT="francis, pugnere, francis pugnere, pugnere francis, développeur, web, développeur web, freelance, devops, php, javascript, developpement">
 		<META NAME="Description" CONTENT="Développeur Web Freelance depuis 2012. Développements à la demande sur devis pour vos besoins spécifiques. PHP, Javascript et Mobiles.">
 		<!-- META NAME="Description" CONTENT="Freelance depuis 2012, je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes..."> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,7 +24,6 @@
 			<header id="header">
 				<a href="#" class="image avatar"><img src="images/FrancisPugnere.png" alt="" /></a>
 				<h1><strong>Francis Pugnère</strong></h1>
-				<h1>Développeur web fullstack</h1>
 			</header>
 
 		<!-- Main -->
@@ -34,10 +33,11 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="http://frpz.github.io/www/" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+					<!-- <li><a href="http://frpz.github.io/www/" class="icon fa-github"><span class="label">Github</span></a></li> -->
 					<li><a href="https://www.linkedin.com/in/francispugnere" target="_blank" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+					<li><a href="https://twitter.com/francispugnere" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="http://www.freelancerepublik.com/users/557086f92bd3f72305f5911b" target="_blank" class="icon fa-user"><span class="label">Freelance republik</span></a></li>
-					<li><a href="http://www.francis.pugnere.fr" target="_blank" class="icon fa-home"><span class="label">WebSite</span></a></li>
+					<li><a href="http://www.francis.pugnere.fr" class="icon fa-home"><span class="label">WebSite</span></a></li>
 					<li><a href="mailto:francis@pugnere.fr" target="_blank" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
@@ -46,6 +46,16 @@
 			</footer>
 
 		<!-- Templates -->
+
+	<script id="headerTemplate" type="text/x-handlebars-template">
+		<div class="lgbuts">
+			{{isLang "fr" "Fr" "Français"}}
+			{{isLang "en" "En" "English"}}
+		</div>
+		<a href="#" class="image avatar"><img src="images/FrancisPugnere.png" alt="" /></a>
+		<h1><strong>Francis Pugnère</strong></h1>
+		<h1>{{fonction}}</h1>
+	</script>
 
 	<script id="page-home" type="text/x-handlebars-template">
 		<section id="one">
@@ -81,7 +91,7 @@
 
 		<section id="three">
 			<h2>Contact</h2>
-			<p>N'hésitez pas à me contacter pour un devis gratuit, je vous répondrai rapidement, à votre convenance par mail ou par téléphone.</p>
+			<p style="text-align: justify;">{{contact.intro}}</p>
 			<div id="contactformerror"></div>
 			<form method="post" id="contactform" action="http://contact.pugnere.fr/contact.php">
 				<div class="row">
@@ -89,17 +99,22 @@
 						<div class="row uniform 50%">
 							<input type=hidden name="source" value="website">
 							<input type=hidden name="key" value="sodifhjqmss54s5d4s65d4f8">
-							<div class="6u 12u$(xsmall)"><input type="text" name="nom" id="nom" placeholder="Nom" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="6u 12u$(xsmall)"><input type="text" name="societe" id="societe" placeholder="Société" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="text" name="tel" id="tel" placeholder="Téléphone (facultatif)" /></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+							<div class="6u 12u$(xsmall)"><input type="text" name="nom" id="nom" placeholder="{{contact.nom}}" /></div>
+							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="{{contact.email}}" /></div>
+							<div class="6u 12u$(xsmall)"><input type="text" name="societe" id="societe" placeholder="{{contact.societe}}" /></div>
+							<div class="6u$ 12u$(xsmall)"><input type="text" name="tel" id="tel" placeholder="{{contact.tel}}" /></div>
+							<div class="12u$"><textarea name="message" id="message" placeholder="{{contact.message}}" rows="4"></textarea></div>
 						</div>
 						<ul class="actions" style="margin-top: 22px;">
-							<li><input type="submit" value="Envoyer" /></li>
+							<li><input type="submit" value="{{contact.envoyer}}" data-envoyer="{{contact.envoyer}}" data-envoiencours="{{contact.encours}}" /></li>
 						</ul>
 					</div>
-				</form>
+				</div>
+			</form>
+			<div id="envoimessageok" style="display: none;">
+				<div style="color: green; font-size: 1.3em; border: 2px dashed gray; padding: 30px; margin: auto;">
+					{{{contact.envoiok}}}
+				</div>
 			</div>
 		</section>
 
