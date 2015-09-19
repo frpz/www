@@ -129,7 +129,7 @@ var LG_en = {
 					//"Multi-utilisateurs et multi-groupes"
 				]
 			},
-			{ titre: "ORO: Time mamagement", image: "oro", width: "12u",
+			{ titre: "ORO: Time management", image: "oro", width: "12u",
 				desc: "Time management application for teams working on sereval projects",
 				list: [
 					"Multi users",
