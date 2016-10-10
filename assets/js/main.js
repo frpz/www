@@ -14,7 +14,8 @@ var LG_fr = {
 	language: "fr",
 	titre: "Freelance depuis 2012",
 	maindesc: [
-		"Fort d'une expérience de 12 ans dans les télécoms et réseaux, j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes.",
+		"Fort d'une expérience de 12 ans dans le déploiement, l'exploitation et l'ingénierie des télécoms et réseaux, en 2012 j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes",
+		"J'étais toujours le \"DevOps\"!",
 		"Maintenant je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes.",
 		"J'utilise les nouvelles technologies à ma disposition afin de faire des applications toujours plus performantes et ergonomiques. J'adapte des templates pour le design et je peux m'interfacer avec un Web Designer au besoin."
 	],
@@ -95,8 +96,8 @@ var LG_en = {
 	language: "en",
 	titre: "Freelance since 2012",
 	maindesc: [
-		"After 12 years in telecom and network engineering and devops, I have decided to switch to development. It wasn't all new to me because in every company I've worked for, I often had to do some code to adjust to the internal requirements.",
-
+		"After 12 years in telecom and network deployement, engineering and devops, I have decided to switch to development. It wasn't all new to me because in every company I've worked for, I often had to do some code to adjust to the internal requirements.",
+		"I've allways been a \"DevOps\" in spirit!",
 		"Now, based in Paris (France), I develop web interfaces for companies with very specific needs for which they can't find any products on the market. My experience enables me to do many relevant propositions, without the need for the clients to write any specifications.",
 
 		"I use new technologies in order to make applications more effective and ergonomic. I adapt templates for design and I can also work with your web designer if necessary."
