@@ -24,6 +24,18 @@ var LG_fr = {
 		desc: "Il s'agit ici d'un petit aperçu, pour plus d'informations, veuillez me contacter.",
 		foot: "La plupart de ces applications ont un backend en PHP et un frontend en HTML/Javascript. Je suis ouvert à toutes les nouveautés et je teste régulièrement de nouvelles technologies, afin de toujours apporter la meilleur expérience utilisateur à mes clients.",
 		articles: [
+			{ titre: "BTH", image: "bth", width: "12u",
+				desc: "Application de gestion de parc techniques",
+				list: [
+					"Multi utilisateur, reliée à un Active Directory",
+					"Multi-langues: Français, anglais, italien",
+					"Reactif, mobile first",
+					"API de provisionning des serveurs DNS et DHCP sous windows",
+					"Architechture déportée avec plusieurs Poolers",
+					"Audits d'analyse d'erreurs sur le parc, avec correction automatique",
+					"Configuration des équipements réseaux via SNMP",
+					"Meteor, Nodejs, Mongodb, SemanticUI, ES6."
+				] },
 			{ titre: "FireFlux", image: "fireflux", width: "12u",
 				desc: "Application de gestion de flux de firewalls. ",
 				list: [
@@ -32,14 +44,16 @@ var LG_fr = {
 					"Génération automatique des configuration, et envoi sur les équipements",
 					"Gestion des droits utilisateurs (Active Directory)",
 					"Utilisation de templates de création de flux",
-					"Regroupement des flux par Projets"
+					"Regroupement des flux par Projets",
+					"PHP, MySql, Angular 1, JqueryUI, SemanticUI, Ansible"
 				] },
 			{ titre: "KalliGraph", image: "kalligraph", width: "12u",
 				desc: "Affichage de graphiques",
 				list: [
 					"Affichage de différents types de graphiques (Linear, Polar...) depuis la base de données",
 					"Export des graphs sous différents formats (pdf, jpeg, xml)",
-					"Multi-utilisateurs et multi-groupes"
+					"Multi-utilisateurs et multi-groupes",
+					"PHP, MySql, Bootstrap, HighCharts"
 				]
 			},
 			{ titre: "ORO: Gestion de temps", image: "oro", width: "12u",
@@ -47,7 +61,8 @@ var LG_fr = {
 				list: [
 					"Multi-utilisateurs",
 					"Génération de rapports d'activité",
-					"Edition des projets"
+					"Edition des projets",
+					"PHP, MySql, JqueryUI"
 				]
 			},
 			{ titre: "JPower", image: "jpower", width: "6u",
@@ -58,7 +73,8 @@ var LG_fr = {
 				list: [
 					"Configuration ENUM pour Class 4",
 					"Import et analyse de configuration de l'Acme Packet",
-					"Configuration des bases de données de routage"
+					"Configuration des bases de données de routage",
+					"PHP, MySql, JqueryUI"
 				]
 			}
 		]
@@ -81,13 +97,9 @@ var LG_en = {
 	maindesc: [
 		"After 12 years in telecom and network engineering and devops, I have decided to switch to development. It wasn't all new to me because in every company I've worked for, I often had to do some code to adjust to the internal requirements.",
 
-		//"Fort d'une expérience de 12 ans dans les télécoms et réseaux, j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes.",
-
 		"Now, based in Paris (France), I develop web interfaces for companies with very specific needs for which they can't find any products on the market. My experience enables me to do many relevant propositions, without the need for the clients to write any specifications.",
-		//"Maintenant je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes.",
 
 		"I use new technologies in order to make applications more effective and ergonomic. I adapt templates for design and I can also work with your web designer if necessary."
-		//"J'utilise les nouvelles technologies à ma disposition afin de faire des applications toujours plus performantes et ergonomiques. J'adapte des templates pour le design et je peux m'interfacer avec un Web Designer au besoin."
 	],
 	header: { fonction: "Fullstack Web Developer"},
 	demo: {
@@ -95,51 +107,45 @@ var LG_en = {
 		desc: "It's only a small snoop of my work, for more information please contact me.",
 		foot: "Most of these applications have a PHP backend and a HTML/javascript frontend. I am open to new technologies that I test very often so I can always improve my customers' user experience.",
 		articles: [
+			{ titre: "BTH", image: "bth", width: "12u",
+				desc: "Application de gestion de parc techniques",
+				list: [
+					"Multi-users: linked to an Active Directory server",
+					"Multi-language: French, english, italian",
+					"Reactif, mobile first",
+					"Commitionning API for DNS and DHCP windows servers",
+					"Deported achitechture with many poolers",
+					"Audits to analyse errors in the park, with an automated correction of errors.",
+					"Network equipments setup via SNMP",
+					"Meteor, Nodejs, Mongodb, SemanticUI, ES6."
+				] },
 			{ titre: "FireFlux", image: "fireflux", width: "12u",
 				desc: "Firewall flows management webapp",
 				list: [
 					"Display links between each firewall",
-					//"Affichage des flux entre les différents firewalls",
-
 					"Import firewall settings into database",
-					//"Import dans la base de données des fichiers de configuration des firewalls",
-
 					"Auto generation of configurations and application on the equipment",
-					//"Génération automatique des configuration, et envoi sur les équipements",
-
 					"Rights management for users (Active Directory)",
-					//"Gestion des droits utilisateurs (Active Directory)",
-
 					"Use of flow creation templates",
-					//"Utilisation de templates de création de flux",
-
-					"Group flows by projects"
-					//"Regroupement des flux par Projets"
+					"Group flows by projects",
+					"PHP, MySql, Angular 1, JqueryUI, SemanticUI, Ansible"
 				] },
 			{ titre: "KalliGraph", image: "kalligraph", width: "12u",
 				desc: "Graph display",
 				list: [
 					"Display of several graph types (Linear, Polar) and tables from database",
-					//"Affichage de différents types de graphiques (Linear, Polar...) et de tableaux depuis la base de données",
-
 					"Export graphs with different formats (pdf, jpeg, xml)",
-					//"Export des graphs sous différents formats (pdf, jpeg, xml)",
-
-					"Multi users and multi groups"
-					//"Multi-utilisateurs et multi-groupes"
+					"Multi users and multi groups",
+					"PHP, MySql, Bootstrap, HighCharts"
 				]
 			},
 			{ titre: "ORO: Time management", image: "oro", width: "12u",
 				desc: "Time management application for teams working on sereval projects",
 				list: [
 					"Multi users",
-					//"Multi-utilisateurs",
-
 					"Activity reports",
-					//"Génération de rapports d'activité",
-
-					"Project configuration"
-					//"Edition des projets"
+					"Project configuration",
+					"PHP, MySql, JqueryUI"
 				]
 			},
 			{ titre: "JPower", image: "jpower", width: "6u",
@@ -149,13 +155,9 @@ var LG_en = {
 				desc: "Set of tools to manage a voice network",
 				list: [
 					"ENUM config for the class 4",
-					//"Configuration ENUM pour Class 4",
-
 					"Importing and analysing of Acme Packet's configuration",
-					//"Import et analyse de configuration de l'Acme Packet",
-
-					"Commissionning of the routing databases"
-					//"Configuration des bases de données de routage"
+					"Commissionning of the routing databases",
+					"PHP, MySql, JqueryUI"
 				]
 			}
 		]
