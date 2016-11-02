@@ -1,0 +1,14 @@
+{
+  "name": "Francis Pugnère WebSite",
+  "short_name": "Francis Pugnère",
+  "icons": [{
+    "src": "images/FrancisPugnere.png",
+      "sizes": "280x280",
+      "type": "image/png"
+    }],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFF",
+  "theme_color": "#787878"
+}
+
