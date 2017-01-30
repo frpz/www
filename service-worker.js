@@ -55,7 +55,7 @@ var filesToCache = [
 	'/images/thumbs/oro.jpg',
 	'/images/thumbs/fireflux.jpg',
 	'/images/thumbs/jpower.jpg',
-	'/images/thumbs/bth.jpg
+	'/images/thumbs/bth.jpg',
 	'/images/thumbs/class4.jpg',
 	'/images/thumbs/kalligraph.jpg',
 	'/images/photo-bg1.jpg',
