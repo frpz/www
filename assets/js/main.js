@@ -32,7 +32,7 @@ var LG_fr = {
 					"Multi-langues: Français, anglais, italien",
 					"Reactif, mobile first",
 					"API de provisionning des serveurs DNS et DHCP sous windows",
-					"Architechture déportée avec plusieurs Poolers",
+					"Architecture déportée avec plusieurs Poolers",
 					"Audits d'analyse d'erreurs sur le parc, avec correction automatique",
 					"Configuration des équipements réseaux via SNMP",
 					"Meteor, Nodejs, Mongodb, SemanticUI, ES6."
