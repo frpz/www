@@ -35,7 +35,16 @@ var LG_fr = {
 					"Architechture déportée avec plusieurs Poolers",
 					"Audits d'analyse d'erreurs sur le parc, avec correction automatique",
 					"Configuration des équipements réseaux via SNMP",
-					"Meteor, Nodejs, Mongodb, SemanticUI, ES6."
+					"Meteor, React, Nodejs, Mongodb, SemanticUI, ES6."
+				] },
+			{ titre: "BeloteNotDead", image: "belote", width: "12u",
+				desc: "Application de gestion de tournois de belote pour l'association BeloteNotDead",
+				list: [
+					"Application web et mobile",
+					"Affichage des scores en temps réel",
+					"Gestion utilisateurs",
+					"Module Admin",
+					"Meteor, React, ReactNative, Nodejs, Mongodb."
 				] },
 			{ titre: "FireFlux", image: "fireflux", width: "12u",
 				desc: "Application de gestion de flux de firewalls. ",
@@ -46,7 +55,7 @@ var LG_fr = {
 					"Gestion des droits utilisateurs (Active Directory)",
 					"Utilisation de templates de création de flux",
 					"Regroupement des flux par Projets",
-					"PHP, MySql, Angular 1, JqueryUI, SemanticUI, Ansible"
+					"PHP, MySql, Angular 1, React, JqueryUI, SemanticUI, Ansible"
 				] },
 			{ titre: "KalliGraph", image: "kalligraph", width: "12u",
 				desc: "Affichage de graphiques",
@@ -118,7 +127,16 @@ var LG_en = {
 					"Deported achitechture with many poolers",
 					"Audits to analyse errors in the park, with an automated correction of errors.",
 					"Network equipments setup via SNMP",
-					"Meteor, Nodejs, Mongodb, SemanticUI, ES6."
+					"Meteor, React, Nodejs, Mongodb, SemanticUI, ES6."
+				] },
+			{ titre: "Belote", image: "belote", width: "12u",
+				desc: "Belote tournement management app for beloteNotDead",
+				list: [
+					"Web and Mobile app",
+					"Real time score display",
+					"User management",
+					"Admin Modle",
+					"Meteor, React ReactNative, Nodejs, Mongodb."
 				] },
 			{ titre: "FireFlux", image: "fireflux", width: "12u",
 				desc: "Firewall flows management webapp",
@@ -129,7 +147,7 @@ var LG_en = {
 					"Rights management for users (Active Directory)",
 					"Use of flow creation templates",
 					"Group flows by projects",
-					"PHP, MySql, Angular 1, JqueryUI, SemanticUI, Ansible"
+					"PHP, MySql, React, Angular 1, JqueryUI, SemanticUI, Ansible"
 				] },
 			{ titre: "KalliGraph", image: "kalligraph", width: "12u",
 				desc: "Graph display",
