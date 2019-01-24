@@ -32,7 +32,7 @@ var LG_fr = {
 					"Multi-langues: Français, anglais, italien",
 					"Reactif, mobile first",
 					"API de provisionning des serveurs DNS et DHCP sous windows",
-					"Architechture déportée avec plusieurs Poolers",
+					"Architecture déportée avec plusieurs Poolers",
 					"Audits d'analyse d'erreurs sur le parc, avec correction automatique",
 					"Configuration des équipements réseaux via SNMP",
 					"Meteor, React, Nodejs, Mongodb, SemanticUI, ES6."
@@ -118,7 +118,7 @@ var LG_en = {
 		foot: "Most of these applications have a PHP backend and a HTML/javascript frontend. I am open to new technologies that I test very often so I can always improve my customers' user experience.",
 		articles: [
 			{ titre: "BTH", image: "bth", width: "12u",
-				desc: "Application de gestion de parc techniques",
+				desc: "Technical auto pools management app",
 				list: [
 					"Multi-users: linked to an Active Directory server",
 					"Multi-language: French, english, italian",
