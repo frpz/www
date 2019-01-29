@@ -44,6 +44,8 @@ var LG_fr = {
 					"Affichage des scores en temps réel",
 					"Gestion utilisateurs",
 					"Module Admin",
+					'<a href="https://tournois.tk" target="_blank">Tournois.tk</a>',
+					'<a href="https://play.google.com/store/apps/details?id=fr.frpz.bndmobileapp" target="_blank">PlayStore</a>',
 					"Meteor, React, ReactNative, Nodejs, Mongodb."
 				] },
 			{ titre: "FireFlux", image: "fireflux", width: "12u",
