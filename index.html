@@ -10,8 +10,8 @@
 		<meta charset="utf-8" />
 		<META NAME="Author" CONTENT="Francis Pugnere">
 		<META http-equiv="Content-Language" content="fr">
-		<META NAME="Keywords" CONTENT="francis, pugnere, francis pugnere, pugnere francis, développeur, web, développeur web, freelance, devops, php, javascript, developpement">
-		<META NAME="Description" CONTENT="Développeur Web Freelance depuis 2012. Développements à la demande sur devis pour vos besoins spécifiques. PHP, Javascript et Mobiles.">
+		<META NAME="Keywords" CONTENT="francis, pugnere, francis pugnere, pugnere francis, développeur, web, développeur web, freelance, devops, php, Nodejs, React, javascript, developpement">
+		<META NAME="Description" CONTENT="Développeur Web Freelance depuis 2012. Développements à la demande sur devis pour vos besoins spécifiques. PHP, Nodejs, React, Javascript et Mobiles.">
 		<!-- META NAME="Description" CONTENT="Freelance depuis 2012, je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes..."> -->
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -86,6 +86,25 @@
 			{{/each}}
 		</section>
 
+		<section id="oneandhalf">
+			<h2>{{stack.titre}}</h2>
+			<p class="justify">{{{stack.desc}}}</p>
+			<div class="grid-col-2">
+				{{#each stack.list}}
+				<div class="">
+					<h3>{{{type}}}</h3>
+					{{#if items}}
+					<ul>
+						{{#each items}}
+							<li>{{{this}}}</li>
+						{{/each}}
+					</ul>
+					{{/if}}
+				</div>
+				{{/each}}
+			</div>
+		</section>
+
 		<section id="two">
 			<h2>{{demo.titre}}</h2>
 			<p class="justify">{{{demo.desc}}}</p>
@@ -158,7 +177,7 @@
 			  //ga('send', 'pageview');
 			</script>
 
-			<script src="assets/js/main.js?ver=1"></script>
+			<script src="assets/js/main.js?ver=3"></script>
 
 			<!-- google developers - structured data -->
 

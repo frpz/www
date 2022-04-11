@@ -28,6 +28,11 @@
 		line-height: 1;
 	}
 
+	.grid-col-2 {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
 	.lgbuts {
 		position: absolute;
 		top: 38px;

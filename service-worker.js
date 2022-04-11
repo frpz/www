@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var dataCacheName = 'weatherData-v1';
-var cacheName = 'weatherPWA-final-1';
+var dataCacheName = 'weatherData-v2';
+var cacheName = 'weatherPWA-final-2';
 var filesToCache = [
   '/',
 	'/favicon.ico',
 	'/index.html',
-	'/makestats-www-francis.sh',
+	//'/makestats-www-francis.sh',
 	'/assets/fonts/fontawesome-webfont.eot',
 	'/assets/fonts/fontawesome-webfont.svg',
 	'/assets/fonts/fontawesome-webfont.woff',
@@ -31,34 +31,30 @@ var filesToCache = [
 	'/assets/js/simrou.min.js',
 	'/assets/js/skel.min.js',
 	'/assets/js/handlebars-v1.3.0.js',
-	'/assets/js/main.js',
+	//'/assets/js/main.js',
 	'/assets/js/ie/html5shiv.js',
 	'/assets/js/ie/backgroundsize.min.htc',
 	'/assets/js/ie/respond.min.js',
-	'/assets/js/ie/PIE.htc',
-	'/assets/css',
 	'/assets/css/ie8.css',
-	'/assets/css/images',
 	'/assets/css/images/overlay.png',
 	'/assets/css/main.css',
 	'/assets/css/font-awesome.min.css',
 	'/images/FrancisPugnere.png',
 	'/images/photo-bg4.jpg',
-	'/images/photo-bg3.jpg',
 	'/images/fulls/oro.jpg',
 	'/images/fulls/fireflux.jpg',
+	'/images/fulls/belote.jpg',
 	'/images/fulls/jpower.jpg',
 	'/images/fulls/bth.jpg',
 	'/images/fulls/class4.jpg',
 	'/images/fulls/kalligraph.jpg',
-	'/images/photo-bg2.jpg',
 	'/images/thumbs/oro.jpg',
 	'/images/thumbs/fireflux.jpg',
+	'/images/thumbs/belote.jpg',
 	'/images/thumbs/jpower.jpg',
 	'/images/thumbs/bth.jpg',
 	'/images/thumbs/class4.jpg',
 	'/images/thumbs/kalligraph.jpg',
-	'/images/photo-bg1.jpg',
 
 ];
 

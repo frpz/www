@@ -14,16 +14,38 @@ var LG_fr = {
 	language: "fr",
 	titre: "Freelance depuis 2012",
 	maindesc: [
-		"Fort d'une expérience de 12 ans dans le déploiement, l'exploitation et l'ingénierie des télécoms et réseaux, en 2012 j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes",
-		"J'étais toujours le \"DevOps\"!",
-		"Maintenant je propose mes services de développement d'interface web aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'aie besoin de formaliser ses attentes.",
+		"Fort d'une expérience de 12 ans dans le déploiement, <b>l'exploitation et l'ingénierie des télécoms et réseaux</b>, en 2012 j'ai choisi de me reconvertir dans le développement. Ce n'était pas nouveau pour moi car dans chaque entreprise où j'ai travaillé, j'ai régulièrement fait du développement à plus ou moins grande échelle, afin de répondre aux problématiques internes",
+		"J'étais toujours le \"<b>DevOps</b>\"!",
+		"Maintenant je propose mes services de <b>développement d'interface web et de mise en place de process devops</b> aux entreprises qui ont des besoins très spécifiques et pour lesquels elles ne trouvent pas de produits sur le marché. Mon expérience me permet de faire des propositions pertinentes, sans que l'entreprise n'ait besoin de formaliser ses attentes.",
 		"J'utilise les nouvelles technologies à ma disposition afin de faire des applications toujours plus performantes et ergonomiques. J'adapte des templates pour le design et je peux m'interfacer avec un Web Designer au besoin."
 	],
-	header: { fonction: "Développeur Web Fullstack"},
+	header: { fonction: "Développeur Web Fullstack/DevOps"},
+	stack: {
+		titre: "Ma \"Stack\"",
+		desc: "Voici une liste non exhaustive des outils et technos que j'aime utiliser:",
+		list: [
+			{
+				type: "FrontEnd",
+				items: ["HTML/Css", "Javascript", "React", "NextJs", "Gatsby", "Chakra-ui"]
+			},
+			{
+				type: "Devops",
+				items: ["Linux", "Docker", "AWS (EC2, ECS, Lambda functions, …)", "Firebase", "Gitlab CI", "Ansible"]
+			},
+			{
+				type: "Backend",
+				items: ["NodeJs", "Python (FastAPI)", "Php"]
+			},
+			{
+				type: "Bases de données",
+				items: ["MongoDB", "MySql", "Athena (AWS)"]
+			}
+		]
+	},
 	demo: {
 		titre: "Quelques exemples de mes réalisations",
 		desc: "Il s'agit ici d'un petit aperçu, pour plus d'informations, veuillez me contacter.",
-		foot: "La plupart de ces applications ont un backend en PHP et un frontend en HTML/Javascript. Je suis ouvert à toutes les nouveautés et je teste régulièrement de nouvelles technologies, afin de toujours apporter la meilleur expérience utilisateur à mes clients.",
+		foot: "La plupart de ces applications ont un backend en <b>PHP ou NodeJs</b> et un frontend en <b>HTML/Javascript/React</b>. Je suis ouvert à toutes les nouveautés et je teste régulièrement de nouvelles technologies, afin de toujours apporter la meilleur expérience utilisateur à mes clients.",
 		articles: [
 			{ titre: "BTH", image: "bth", width: "12u",
 				desc: "Application de gestion de parc techniques",
@@ -108,16 +130,38 @@ var LG_en = {
 	titre: "Freelance since 2012",
 	maindesc: [
 		"After 12 years in telecom and network deployement, engineering and devops, I have decided to switch to development. It wasn't all new to me because in every company I've worked for, I often had to do some code to adjust to the internal requirements.",
-		"I've allways been a \"DevOps\" in spirit!",
-		"Now, based in Paris (France), I develop web interfaces for companies with very specific needs for which they can't find any products on the market. My experience enables me to do many relevant propositions, without the need for the clients to write any specifications.",
+		"I've always been a \"DevOps\" in spirit!",
+		"Now, based in Paris (France), I develop web interfaces setup devops processes for companies with very specific needs for which they can't find any products on the market. My experience enables me to do many relevant propositions, without the need for the clients to write any specifications.",
 
 		"I use new technologies in order to make applications more effective and ergonomic. I adapt templates for design and I can also work with your web designer if necessary."
 	],
-	header: { fonction: "Fullstack Web Developer"},
+	header: { fonction: "Fullstack Web Developer/DevOps"},
+	stack: {
+		titre: "My \"Stack\"",
+		desc: "Here is a quick list of the tools and technologies I like to use",
+		list: [
+			{
+				type: "FrontEnd",
+				items: ["HTML/Css", "Javascript", "React", "NextJs", "Gatsby", "Chakra-ui"]
+			},
+			{
+				type: "Devops",
+				items: ["Linux", "Docker", "AWS (EC2, ECS, Lambda functions, …)", "Firebase", "Gitlab CI", "Ansible"]
+			},
+			{
+				type: "Backend",
+				items: ["NodeJs", "Python (FastAPI)", "Php"]
+			},
+			{
+				type: "Databases",
+				items: ["MongoDB", "MySql", "Athena (AWS)"]
+			}
+		]
+	},
 	demo: {
 		titre: "Some samples of my work",
 		desc: "It's only a small snoop of my work, for more information please contact me.",
-		foot: "Most of these applications have a PHP backend and a HTML/javascript frontend. I am open to new technologies that I test very often so I can always improve my customers' user experience.",
+		foot: "Most of these applications have a <b>PHP or NodeJs</b> backend and a <b>HTML/javascript/React</b> frontend. I am open to new technologies that I test very often so I can always improve my customers' user experience.",
 		articles: [
 			{ titre: "BTH", image: "bth", width: "12u",
 				desc: "Technical auto pools management app",
