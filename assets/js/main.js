@@ -315,25 +315,29 @@ var LG_en = {
 
 			//On fade le contenu actuel puis on remet le nouveau
 			$("#main").fadeOut(200,function(){
-				$("#main").html(t(opts || {})).fadeIn(200);
+        $("#main")
+          .html(t(opts || {}))
+          .fadeIn(200)
 
-				//galerie photo
-				$('#two').poptrox({
-					caption: function($a) { return $a.prev('h3').text(); },
-					overlayColor: '#2c2c2c',
-					overlayOpacity: 0.85,
-					popupCloserText: '',
-					popupLoaderText: '',
-					selector: '.work-item a.image',
-					usePopupCaption: true,
-					usePopupDefaultStyling: false,
-					usePopupEasyClose: false,
-					usePopupNav: true,
-					windowMargin: (skel.breakpoint('small').active ? 0 : 50)
-				});
+        //galerie photo
+        $("#two").poptrox({
+          caption: function ($a) {
+            return $a.prev("h3").text()
+          },
+          overlayColor: "#2c2c2c",
+          overlayOpacity: 0.85,
+          popupCloserText: "",
+          popupLoaderText: "",
+          selector: ".work-item a.image",
+          usePopupCaption: true,
+          usePopupDefaultStyling: false,
+          usePopupEasyClose: false,
+          usePopupNav: true,
+          windowMargin: skel.breakpoint("small").active ? 0 : 50,
+        })
 
-				//formulaire de contact:
-				$("#contactform").submit(function(e){
+        //formulaire de contact:
+        /* 				$("#contactform").submit(function(e){
 					var $f = $(e.currentTarget);
 					var subbut = $f.find("input[type=submit]").prop("disabled", true);
 					subbut.val(subbut.data("envoiencours"));
@@ -356,9 +360,8 @@ var LG_en = {
 						}
 					}, "jsonp");
 					return false;
-				});
-
-			});
+				}); */
+      });
 		};
 	};
 	
