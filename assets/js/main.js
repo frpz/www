@@ -5,10 +5,10 @@
 */
 
 /* Languages */
-var deflg = window.navigator.userLanguage || window.navigator.language;
-var lstlg = localStorage.getItem("language");
+var deflg = window.navigator.userLanguage || window.navigator.language
+var lstlg = localStorage.getItem("language")
 //la lange par defaut est l'anglais, sauf si le nav est fr, ou la dernière langue utilisée etait fr
-var firstlg = (/^fr/.test(lstlg || deflg)) ? "fr" : "en";
+var firstlg = /^fr/.test(lstlg || deflg) ? "fr" : "en"
 
 var LG_fr = {
   language: "fr",
@@ -278,43 +278,48 @@ var LG_en = {
 }
 
 /* Main script */
-(function($) {
+;(function ($) {
+  Handlebars.registerHelper("isFirst", function (context, opt) {
+    //console.log("helper: ",context.data);
+    return context.data.first ? context.fn() : ""
+  })
 
-	Handlebars.registerHelper('isFirst', function(context,opt) {
-		//console.log("helper: ",context.data);
-		return context.data.first ? context.fn() : "";
-	});
-	
-	Handlebars.registerHelper('isLang', function(lg, titre, alt) {
-		//console.log("helper isLang: ",arguments, this);
-		return new Handlebars.SafeString('<span class="lglink" title="'+alt+'">' + ( this.language == lg ? titre : '<a href="#/'+lg+'">'+titre+"</a>") + '</span>');
-	});
-	
-	//fonction pour compiler un template
-	var hb = function(template,opts){
-		var t= Handlebars.compile($("#"+template).html());
-		return t(opts || {});
-	};
-	var $main = $("#main");
+  Handlebars.registerHelper("isLang", function (lg, titre, alt) {
+    //console.log("helper isLang: ",arguments, this);
+    return new Handlebars.SafeString(
+      '<span class="lglink" title="' +
+        alt +
+        '">' +
+        (this.language == lg ? titre : '<a href="#/' + lg + '">' + titre + "</a>") +
+        "</span>"
+    )
+  })
 
-	//fonction pour préparer l'affichage d'un template
-	var display = function(template,opts){
-		return function(){
-			//On mémorise la dernire langue utilisée
-			localStorage.setItem("language", opts.language);
-			opts.header.language = opts.language;
+  //fonction pour compiler un template
+  var hb = function (template, opts) {
+    var t = Handlebars.compile($("#" + template).html())
+    return t(opts || {})
+  }
+  var $main = $("#main")
 
-			//on recharge le header avec les textes de la langue
-			$("#header").html(hb("headerTemplate",opts.header));
+  //fonction pour préparer l'affichage d'un template
+  var display = function (template, opts) {
+    return function () {
+      //On mémorise la dernire langue utilisée
+      localStorage.setItem("language", opts.language)
+      opts.header.language = opts.language
 
-			//compilation du template principal
-			var t= Handlebars.compile($("#"+template).html());
+      //on recharge le header avec les textes de la langue
+      $("#header").html(hb("headerTemplate", opts.header))
 
-			//google analytics
-			ga('send', 'pageview', { 'page': window.location.hash.substring(1)  });
+      //compilation du template principal
+      var t = Handlebars.compile($("#" + template).html())
 
-			//On fade le contenu actuel puis on remet le nouveau
-			$("#main").fadeOut(200,function(){
+      //google analytics
+      ga("send", "pageview", { page: window.location.hash.substring(1) })
+
+      //On fade le contenu actuel puis on remet le nouveau
+      $("#main").fadeOut(200, function () {
         $("#main")
           .html(t(opts || {}))
           .fadeIn(200)
@@ -361,134 +366,110 @@ var LG_en = {
 					}, "jsonp");
 					return false;
 				}); */
-      });
-		};
-	};
-	
-	var router = new Simrou({
-		"/"   : display("page-home", LG_fr),
-		"/fr" : display("page-home", LG_fr),
-		"/en" : display("page-home", LG_en)
-	});
-	router.start("/"+firstlg);
+      })
+    }
+  }
 
+  var router = new Simrou({
+    "/": display("page-home", LG_fr),
+    "/fr": display("page-home", LG_fr),
+    "/en": display("page-home", LG_en),
+  })
+  router.start("/" + firstlg)
 
+  /**************/
 
+  var settings = {
+    // Parallax background effect?
+    parallax: true,
 
+    // Parallax factor (lower = more intense, higher = less intense).
+    parallaxFactor: 20,
+  }
 
+  skel.breakpoints({
+    xlarge: "(max-width: 1800px)",
+    large: "(max-width: 1280px)",
+    medium: "(max-width: 980px)",
+    small: "(max-width: 736px)",
+    xsmall: "(max-width: 480px)",
+  })
 
+  $(function () {
+    var $window = $(window),
+      $body = $("body"),
+      $header = $("#header")
 
-	/**************/
+    // Disable animations/transitions until the page has loaded.
+    $body.addClass("is-loading")
 
-	var settings = {
+    $window.on("load", function () {
+      $body.removeClass("is-loading")
+    })
 
-		// Parallax background effect?
-			parallax: true,
+    // Touch?
+    if (skel.vars.mobile) {
+      // Turn on touch mode.
+      $body.addClass("is-touch")
 
-		// Parallax factor (lower = more intense, higher = less intense).
-			parallaxFactor: 20
+      // Height fix (mostly for iOS).
+      window.setTimeout(function () {
+        $window.scrollTop($window.scrollTop() + 1)
+      }, 0)
+    }
 
-	};
+    // Fix: Placeholder polyfill.
+    $("form").placeholder()
 
-	skel.breakpoints({
-		xlarge: '(max-width: 1800px)',
-		large: '(max-width: 1280px)',
-		medium: '(max-width: 980px)',
-		small: '(max-width: 736px)',
-		xsmall: '(max-width: 480px)'
-	});
+    // Prioritize "important" elements on medium.
+    skel.on("+medium -medium", function () {
+      $.prioritize(".important\\28 medium\\29", skel.breakpoint("medium").active)
+    })
 
-	$(function() {
+    // Header.
 
-		var $window = $(window),
-			$body = $('body'),
-			$header = $('#header');
+    // Parallax background.
 
-		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+    // Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
+    if (skel.vars.browser == "ie" || skel.vars.mobile) settings.parallax = false
 
-			$window.on('load', function() {
-				$body.removeClass('is-loading');
-			});
+    if (settings.parallax) {
+      skel.on("change", function () {
+        if (skel.breakpoint("medium").active) {
+          $window.off("scroll.strata_parallax")
+          $header.css("background-position", "top left, center center")
+        } else {
+          $header.css("background-position", "left 0px")
 
-		// Touch?
-			if (skel.vars.mobile) {
+          $window.on("scroll.strata_parallax", function () {
+            $header.css(
+              "background-position",
+              "left " + -1 * (parseInt($window.scrollTop()) / settings.parallaxFactor) + "px"
+            )
+          })
+        }
+      })
+    }
 
-				// Turn on touch mode.
-					$body.addClass('is-touch');
+    // Main Sections: Two.
 
-				// Height fix (mostly for iOS).
-					window.setTimeout(function() {
-						$window.scrollTop($window.scrollTop() + 1);
-					}, 0);
-
-			}
-
-		// Fix: Placeholder polyfill.
-			$('form').placeholder();
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
-		// Header.
-
-			// Parallax background.
-
-				// Disable parallax on IE (smooth scrolling is jerky), and on mobile platforms (= better performance).
-					if (skel.vars.browser == 'ie'
-					||	skel.vars.mobile)
-						settings.parallax = false;
-
-				if (settings.parallax) {
-
-					skel.on('change', function() {
-
-						if (skel.breakpoint('medium').active) {
-
-							$window.off('scroll.strata_parallax');
-							$header.css('background-position', 'top left, center center');
-
-						}
-						else {
-
-							$header.css('background-position', 'left 0px');
-
-							$window.on('scroll.strata_parallax', function() {
-								$header.css('background-position', 'left ' + (-1 * (parseInt($window.scrollTop()) / settings.parallaxFactor)) + 'px');
-							});
-
-						}
-
-					});
-
-				}
-
-		// Main Sections: Two.
-
-			// Lightbox gallery.
-				$window.on('load', function() {
-
-					$('#two').poptrox({
-						caption: function($a) { return $a.next('h3').text(); },
-						overlayColor: '#2c2c2c',
-						overlayOpacity: 0.85,
-						popupCloserText: '',
-						popupLoaderText: '',
-						selector: '.work-item a.image',
-						usePopupCaption: true,
-						usePopupDefaultStyling: false,
-						usePopupEasyClose: false,
-						usePopupNav: true,
-						windowMargin: (skel.breakpoint('small').active ? 0 : 50)
-					});
-
-				});
-
-	});
-
-})(jQuery);
+    // Lightbox gallery.
+    $window.on("load", function () {
+      $("#two").poptrox({
+        caption: function ($a) {
+          return $a.next("h3").text()
+        },
+        overlayColor: "#2c2c2c",
+        overlayOpacity: 0.85,
+        popupCloserText: "",
+        popupLoaderText: "",
+        selector: ".work-item a.image",
+        usePopupCaption: true,
+        usePopupDefaultStyling: false,
+        usePopupEasyClose: false,
+        usePopupNav: true,
+        windowMargin: skel.breakpoint("small").active ? 0 : 50,
+      })
+    })
+  })
+})(jQuery)
